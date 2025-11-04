@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Integritas & Loyalitas ASN (Sesi 12)</title>
+    <!-- Load Tailwind CSS untuk styling utilitas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons untuk gaya visual yang bersih -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Mengatur font agar terlihat lebih profesional dan modern */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Latar belakang abu-abu muda */
+        }
+        /* Warna BPS yang khas */
+        .bps-blue-dark {
+            background-color: #004e92;
+        }
+        .bps-blue-light {
+            color: #007bff;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 78, 146, 0.15); /* Shadow berbasis warna BPS */
+        }
+        .icon-box {
+            /* Gradien cerah baru (Merah Marun ke Emas) untuk tema Integritas Tinggi */
+            background: linear-gradient(135deg, #881337 0%, #fbbf24 100%); 
+            padding: 1rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 4px 15px rgba(136, 19, 55, 0.5);
+            width: 4rem;
+            height: 4rem;
+        }
+        /* Responsive padding untuk konten */
+        .content-section {
+            padding: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .content-section {
+                padding: 2.5rem;
+            }
+        }
+        /* Gaya baru untuk poin-poin penting */
+        .key-point {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .key-point:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .alert-info {
+            background-color: #fefce8; /* Kuning muda sangat pucat */
+            color: #a16207; /* Kuning/Emas gelap */
+            border-left: 4px solid #fcd34d; /* Kuning cerah */
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 md:p-8">
+
+    <!-- Kontainer Utama Presentasi (Selalu Responsif dan Terpusat) -->
+    <div class="w-full max-w-4xl bg-white rounded-xl card-shadow overflow-hidden mb-8">
+
+        <!-- Header: Warna BPS dan Judul -->
+        <header class="bps-blue-dark text-white p-6 md:p-8 rounded-t-xl">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-1">
+                ⚖️ Modul Integritas & Loyalitas ASN
+            </h1>
+            <p class="text-lg font-light opacity-90">
+                Fokus Korupsi, Judi Online, & Etika Publik | BPS Provinsi Sumatera Utara
+            </p>
+        </header>
+
+        <!-- Bagian Konten 1: Integritas & Sanksi (Korupsi & Gratifikasi) -->
+        <section class="content-section border-b border-gray-100">
+            <div class="flex items-start mb-6">
+                <div class="icon-box mr-4 flex-shrink-0">
+                    <i data-lucide="bomb" class="w-8 h-8 text-white"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mt-1">1. Sanksi Korupsi & Pelaporan Gratifikasi</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Poin Kunci 1: Sanksi Tindak Pidana Korupsi Inkracht -->
+                <div class="key-point p-4 bg-red-50 border-l-4 border-red-500">
+                    <h3 class="text-xl font-semibold text-red-700 flex items-center mb-1">
+                        <i data-lucide="skull" class="w-5 h-5 mr-2"></i> Konsekuensi Korupsi Inkracht
+                    </h3>
+                    <p class="text-gray-700 font-bold text-lg">
+                        ASN yang terbukti melakukan tindak pidana korupsi inkracht akan dikenakan sanksi **Pemberhentian tidak dengan hormat sebagai PNS**.
+                    </p>
+                </div>
+
+                <!-- Poin Kunci 2: Batas Waktu Pelaporan Gratifikasi -->
+                <div class="key-point p-4 bg-amber-50 border-l-4 border-amber-500">
+                    <h3 class="text-xl font-semibold text-amber-700 flex items-center mb-1">
+                        <i data-lucide="timer" class="w-5 h-5 mr-2"></i> Batas Lapor Gratifikasi
+                    </h3>
+                    <p class="text-gray-700">
+                        Batas waktu maksimal bagi ASN untuk melaporkan penerimaan Gratifikasi adalah **30 hari kerja** sejak tanggal penerimaan.
+                    </p>
+                </div>
+
+                <!-- Poin Kunci 3: Sanksi Judi Online -->
+                <div class="key-point p-4 bg-fuchsia-50 border-l-4 border-fuchsia-500">
+                    <h3 class="text-xl font-semibold text-fuchsia-700 flex items-center mb-1">
+                        <i data-lucide="monitor-x" class="w-5 h-5 mr-2"></i> Potensi Sanksi Judi Online
+                    </h3>
+                    <p class="text-gray-700 font-bold text-lg">
+                        Sanksi disiplin yang berpotensi dikenakan kepada ASN yang terlibat judi online adalah **Hukuman disiplin berat**.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Konten 2: Nilai Dasar & Etika Publik -->
+        <section class="content-section">
+            <div class="flex items-start mb-6">
+                <div class="icon-box mr-4 flex-shrink-0">
+                    <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mt-1">2. Loyalitas & Citra Biokrasi</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Poin Kunci 4: Loyalitas (Menolak Manipulasi Anggaran) -->
+                <div class="key-point p-4 bg-emerald-50 border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-semibold text-emerald-700 flex items-center mb-1">
+                        <i data-lucide="flag-triangle-right" class="w-5 h-5 mr-2"></i> Loyalitas Tertinggi
+                    </h3>
+                    <p class="text-gray-700">
+                        Menolak manipulasi anggaran adalah pengamalan nilai Loyal kepada **Kesetiaan kepada Pancasila, UUD 1945, dan NKRI**.
+                    </p>
+                </div>
+
+                <!-- Poin Kunci 5: Dampak Negatif Gaya Hidup Hedonis -->
+                <div class="key-point p-4 bg-pink-50 border-l-4 border-pink-500">
+                    <h3 class="text-xl font-semibold text-pink-700 flex items-center mb-1">
+                        <i data-lucide="eye-off" class="w-5 h-5 mr-2"></i> Dampak Hedonisme
+                    </h3>
+                    <p class="text-gray-700 font-bold text-lg">
+                        Dampak negatif gaya hidup hedonis ASN adalah **Menimbulkan kecemburuan sosial dan menurunkan citra birokrasi**.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Catatan Penting -->
+            <div class="mt-6 alert-info flex items-start">
+                <i data-lucide="info" class="w-6 h-6 mr-3 flex-shrink-0"></i>
+                <p class="text-sm">
+                    **Penting:** Integritas adalah harga mati. Korupsi berujung **Pemberhentian Tidak Dengan Hormat**. Loyalitas sejati adalah pada negara, bukan pada individu atau kelompok. Jaga citra birokrasi!
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer yang Diperbarui -->
+        <footer class="text-center p-4 border-t border-gray-200 text-sm text-gray-500 bg-gray-50 rounded-b-xl">
+            <p>Pahami Regulasi, Tingkatkan Kompetensi. &copy; 2025 Tim Pengembangan Kompetensi BPS Provinsi Sumatera Utara</p>
+        </footer>
+
+    </div>
+
+    <!-- Script untuk inisialisasi ikon Lucide -->
+    <script>
+        // Memastikan ikon Lucide dirender setelah DOM dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
+
